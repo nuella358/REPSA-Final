@@ -1,0 +1,611 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+/* #### Biotif---*** #### */
+@font-face {
+  font-family: "Biotif-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Biotif-Black"),
+    url("./fonts/biotif\ \(1\)/Biotif-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Biotif-BlackItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Biotif-BlackItalic"),
+    url("./fonts/biotif\ \(1\)/Biotif-BlackItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Biotif-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Biotif-Bold"),
+    url("./fonts/biotif\ \(1\)/Biotif-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Biotif-BoldItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Biotif-BoldItalic"),
+    url("./fonts/biotif\ \(1\)/Biotif-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Biotif-Book";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Biotif-Book"),
+    url("./fonts/biotif\ \(1\)/Biotif-Book.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Biotif-BookItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Biotif-BookItalic"),
+    url("./fonts/biotif\ \(1\)/Biotif-BookItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Biotif-ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Biotif-ExtraBold"),
+    url("./fonts/biotif\ \(1\)/Biotif-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Biotif-ExtraBoldItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Biotif-ExtraBoldItalic"),
+    url("./fonts/biotif\ \(1\)/Biotif-ExtraBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Biotif-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Biotif-Light"),
+    url("./fonts/biotif\ \(1\)/Biotif-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Biotif-LightItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Biotif-LightItalic"),
+    url("./fonts/biotif\ \(1\)/Biotif-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Biotif-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Biotif-Medium"),
+    url("./fonts/biotif\ \(1\)/Biotif-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Biotif-MediumItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Biotif-MediumItalic"),
+    url("./fonts/biotif\ \(1\)/Biotif-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Biotif-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Biotif-Regular"),
+    url("./fonts/biotif\ \(1\)/Biotif-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Biotif-RegularItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Biotif-RegularItalic"),
+    url("./fonts/biotif\ \(1\)/Biotif-RegularItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Biotif-SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Biotif-SemiBold"),
+    url("./fonts/biotif\ \(1\)/Biotif-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Biotif-SemiBoldItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Biotif-SemiBoldItalic"),
+    url("./fonts/biotif\ \(1\)/Biotif-SemiBoldItalic.ttf") format("truetype");
+}
+
+.header-index {
+  margin-top: 30px;
+  background: white;
+}
+
+.opaque-white {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.navigation {
+  grid-column-gap: 8%;
+  margin-top: 30px;
+  justify-content: space-evenly;
+}
+.navigation a {
+  text-decoration: none;
+  color: black;
+  font-family: Biotif-SemiBold;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.navigation a:hover {
+  text-decoration: none;
+  font-size: larger;
+  color: black;
+}
+/* Buttons */
+.header-button {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.primary {
+  border-radius: 7px;
+  background-color: #ec3049;
+  font-family: "Biotif-Medium";
+  color: white;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
+  padding: 7px 50px;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height */
+
+  text-align: center;
+}
+
+.secondary {
+  border-radius: 7px;
+  border-color: #4f4f4f;
+  font-family: "Biotif-Medium";
+  color: #4f4f4f;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
+  padding: 7px 30px;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+}
+
+/* Hero */
+.hero2 {
+  height: 450px;
+}
+
+.hero h1 {
+  background-color: black;
+  background-image: linear-gradient(180deg, #000000 -8%, #141765 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Biotif-Bold;
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.hero-p {
+  color: #4f4f4f;
+  font-family: Biotif-Medium;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.hero-buttons {
+  display: inline-block;
+  text-align: center;
+  gap: 8px;
+}
+
+.hero-img {
+  display: inline-block;
+}
+
+.hero-img1 {
+  position: absolute;
+  top: 3.79%;
+  bottom: 88.57%;
+  width: 40%;
+  right: 60%;
+}
+
+.hero-img2 {
+  position: relative;
+  left: 29%;
+  width: 40%;
+  margin-bottom: 800px;
+  top: 2.93%;
+  bottom: 87.76%;
+}
+
+.hero-img3 {
+  position: absolute;
+  left: 59%;
+  width: 40%;
+  top: 3.79%;
+  bottom: 88.57%;
+}
+
+/* Partners*/
+
+.partners {
+  text-align: center;
+}
+
+.partners img {
+  width: 160px;
+}
+.partners2 h4 {
+  font-family: Biotif-Medium;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #4f4f4f;
+}
+
+.partner-section {
+  background-image: url(./images/Partners\ Background.png);
+  position: relative;
+  opacity: 0.7;
+}
+/*Events*/
+.events-col1 {
+  background: linear-gradient(135.48deg, #029cb5 11.96%, #a686d0 75.21%);
+  border-radius: 16.86px;
+  color: #fff;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+}
+
+.events-col2 {
+  background: linear-gradient(135.48deg, #029cb5 11.96%, #a686d0 75.21%);
+  border-radius: 16.86px;
+  color: #fff;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+}
+
+.events-col3 {
+  background: linear-gradient(135.48deg, #029cb5 11.96%, #a686d0 75.21%);
+  border-radius: 16.86px;
+  color: #fff;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+}
+
+.events {
+  column-gap: 70px;
+  margin-bottom: 70px;
+}
+
+.events p {
+  margin-top: 80px;
+  font-family: Biotif-Medium;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.events2 h5 {
+  font-family: Biotif-Regular;
+  font-size: 16px;
+  line-height: 27px;
+  color: #9a9b9b;
+}
+
+.events2 p {
+  font-family: Biotif-Medium;
+  font-size: 24px;
+  line-height: 45px;
+}
+
+.events-view {
+  text-decoration: underline;
+  float: right;
+}
+
+.events-view a {
+  color: #000000;
+}
+
+/*About Us*/
+.about-section {
+  background-image: url(./images/papyrus\ 1.png);
+  position: relative;
+  margin-bottom: 0px;
+  /* opacity: 0.4; */
+}
+.about2 h5 {
+  float: right;
+  font-family: Biotif-Regular;
+  font-size: 16px;
+  line-height: 27px;
+  color: #9a9b9b;
+}
+
+.about2 h4 {
+  font-family: Biotif-Medium;
+  font-size: 24px;
+  line-height: 45px;
+  margin-top: 35px;
+}
+/* .about img {
+  margin-bottom: 9px;
+} */
+.about p {
+  padding-left: 144px;
+  font-family: Biotif-Regular;
+  font-size: 18px;
+  line-height: 30px;
+  color: #4f4f4f;
+}
+
+.about2 span {
+  background-color: var(--blue);
+  background-image: linear-gradient(141.42deg, #029cb5 24.41%, #3a9ef2 92.94%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*Testimonials*/
+.testimonials {
+  background: linear-gradient(148.86deg, #029cb5 13.85%, #141765 75.98%);
+  text-align: left;
+}
+
+.testimonials h5 {
+  font-family: Biotif-Regular;
+  font-size: 16px;
+  line-height: 27px;
+  color: white;
+}
+
+.testimonials p {
+  font-family: Biotif-Regular;
+  font-size: 24px;
+  line-height: 30px;
+  color: white;
+}
+
+.testimonials1 {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  color: white;
+}
+
+.testimonials h4 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-family: Biotif-Regular;
+  font-size: 18px;
+  line-height: 30px;
+  color: white;
+}
+
+.testimonials1 img {
+  margin-top: 18px;
+}
+
+.testimonials1 p {
+  font-size: 18px;
+}
+
+.image-layer {
+  background-image: url(./images/Partners\ Background.png);
+  position: relative;
+}
+.text-layer {
+  background-color: rgb(251, 251, 251, 0.5);
+  /* position: absolute;
+  top: 0;
+  bottom: 0; */
+}
+
+/* Subscribe */
+.subscribe h5 {
+  font-size: 1rem;
+  font-family: Biotif-Regular;
+  font-size: 1rem;
+  line-height: 1.6875rem;
+  color: white;
+}
+.subscribe p {
+  font-family: Biotif-Regular;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+
+.subscribe-box {
+  background: linear-gradient(
+    143.36deg,
+    #fca823 31.61%,
+    rgba(244, 111, 53, 0.876709) 55.14%,
+    rgba(236, 48, 73, 0.74) 78.67%
+  );
+}
+
+.form__field {
+  border: none;
+  border-bottom: 2px solid white;
+  width: 20rem;
+  background: transparent;
+  outline: none;
+  color: white;
+}
+
+.form__field::placeholder {
+  color: white;
+  font-size: 1.3rem;
+  cursor: text;
+  padding-bottom: 4rem;
+}
+
+/* programs-landing */
+.programs span {
+  background-color: var(--blue);
+  background-image: linear-gradient(141.42deg, #029cb5 24.41%, #3a9ef2 92.94%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.programs h5 {
+  font-family: Biotif-Regular;
+  font-size: 16px;
+  line-height: 27px;
+  color: #9a9b9b;
+}
+
+.programs h5 ~ p {
+  font-family: Biotif-Medium;
+  font-size: 24px;
+  line-height: 30px;
+  color: black;
+}
+
+.programs .card-title {
+  font-family: Biotif-Medium;
+}
+
+.programs .card-body {
+  font-size: 20px;
+  line-height: 30px;
+  color: black;
+}
+
+/* Join */
+.join {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  color: white;
+}
+
+.join img ~ p {
+  font-family: Biotif-Regular;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+
+/* footer */
+footer {
+  font-family: Biotif-Regular;
+  padding-top: 1.5rem;
+  background: black;
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-family: Biotif-Regular;
+}
+
+footer a:hover {
+  text-decoration: none;
+  font-size: large;
+  color: white;
+}
+
+.social-list {
+  justify-content: flex-end;
+  column-gap: 1rem;
+}
+
+.footer-text h5 {
+  font-family: Biotif-SemiBold;
+}
+
+.about-hero {
+  background-color: black;
+  background-image: linear-gradient(180deg, #000000 -8%, #141765 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Biotif-Bold;
+  font-size: 36px;
+  line-height: 55px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.about-hero-p {
+  font-family: Biotif-Medium;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4f4f4f;
+}
+/* volunteer page */
+
+/* Donate */
+.donate-header-text {
+  font-family: Biotif-Medium;
+  text-align: center;
+}
+
+.donate-box {
+  font-family: Biotif-Medium;
+  width: 560px;
+  height: 135px;
+  border-radius: 7px;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
+  padding: 7px 30px;
+  font-size: 18px;
+  line-height: 36px;
+  justify-content: center;
+  padding-top: 20px;
+  margin: auto;
+  background: #fafafa;
+}
